@@ -4,10 +4,9 @@
 //
 //  Created by Ege Aydemir on 18.10.2022.
 //
-
 import SwiftUI
 
-struct SwiftUIView: View {
+struct AnimalListItemView: View {
     // MARK: PROPERTIES
     
     let animal: Animal
@@ -39,11 +38,11 @@ struct SwiftUIView: View {
     }
 }
 //MARK: PREVIEW
-struct SwiftUIView_Previews: PreviewProvider {
+struct AnimalListItemView_Previews: PreviewProvider {
     static let animals: [Animal] = Bundle.main.decode("animals.json")
     
     static var previews: some View {
-        SwiftUIView(animal: animals[1])
+        AnimalListItemView(animal: animals[1])
             .previewLayout(.sizeThatFits)
             .padding()
     }
