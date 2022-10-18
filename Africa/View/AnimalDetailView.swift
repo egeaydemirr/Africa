@@ -15,6 +15,9 @@ struct AnimalDetailView: View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .center, spacing: 20) {
                 //HERO IMAGE
+                Image(animal.image)
+                    .resizable()
+                    .scaledToFit()
                 //TITLE
                 //HEADLINE
                 //GALLERY
