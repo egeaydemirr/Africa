@@ -19,6 +19,19 @@ struct AnimalDetailView: View {
                     .resizable()
                     .scaledToFit()
                 //TITLE
+                Text(animal.name)
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.primary)
+                    .multilineTextAlignment(.center)
+                    .padding(.vertical, 8)
+                    .background(
+                        Color.accentColor
+                            .frame(height: 6)
+                            .offset(y: 24)
+                    )
+                    
+                    
                 //HEADLINE
                 //GALLERY
                 //FACTS
