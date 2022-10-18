@@ -31,9 +31,17 @@ struct AnimalDetailView: View {
                             .offset(y: 24)
                     )
                     
-                    
                 //HEADLINE
+                Text(animal.headline)
+                    .font(.headline)
+                    .foregroundColor(.accentColor)
+                    .multilineTextAlignment(.leading)
+                    .fontWeight(.heavy)
+                    .padding(.horizontal)
                 //GALLERY
+                Group{
+                    HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
+                }
                 //FACTS
                 //DESCRIPTION
                 //MAP
