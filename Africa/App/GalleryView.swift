@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct GalleryView: View {
+    //MARK: PROPERTIES
+    
+    //SIMPLE GRID DEFINITION
+    let gridLayout: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    //MARK: BODY
     var body: some View {
         
         ScrollView(.vertical, showsIndicators: false) {
@@ -17,7 +27,7 @@ struct GalleryView: View {
         .background(MotionAnimationView())
     }
 }
-
+//MARK: PREVIEW
 struct GalleryView_Previews: PreviewProvider {
     static var previews: some View {
         GalleryView()
